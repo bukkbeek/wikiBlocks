@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wikiBlocks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h1>wiki<span>Blocks</span></h1>
+            <input type="text" id="search-input" placeholder="Search...">
+        </div>
+        <div id="nav-container">
+            <!-- Navigation will be dynamically populated here -->
+            <div class="nav-loading">Loading wiki data...</div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <div id="content-container">
+            <!-- Wiki content will be dynamically loaded here -->
+            <div class="welcome-message">
+                <h2>Welcome to wikiBlocks</h2>
+                <p>This is a template wiki. To add your own content, replace the files in the 'wiki' directory and modify 'wiki-index.json'.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="info-panel">
+        <div id="info-container">
+            <!-- Info panel will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <script src="lib/marked.min.js"></script>
+    <script src="lib/js-yaml.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
